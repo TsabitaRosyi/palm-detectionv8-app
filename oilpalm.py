@@ -81,7 +81,7 @@ def draw_results(image, results):
 
             box_annotator = BoxAnnotator(
                 color=color,
-                thickness=3.8   # KETEBALAN BOUNDING BOX
+                thickness=4   # KETEBALAN BOUNDING BOX
             )
 
             detection = Detections(
