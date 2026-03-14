@@ -81,7 +81,7 @@ def draw_results(image, results):
 
             box_annotator = BoxAnnotator(
                 color=color,
-                thickness=6
+                thickness=10
             )
 
             detection = Detections(
