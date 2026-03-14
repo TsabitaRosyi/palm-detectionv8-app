@@ -46,8 +46,8 @@ label_to_color = {
     "mentah": Color.BLACK
 }
 label_annotator = LabelAnnotator(
-    text_scale=1,       #  perbesar ukuran teks (default kecil)
-    text_thickness=2,     #  tebalkan huruf
+    text_scale=3,       #  perbesar ukuran teks (default kecil)
+    text_thickness=3,     #  tebalkan huruf
     text_padding=6        #  beri jarak biar tidak mepet box
 )
 
@@ -81,7 +81,7 @@ def draw_results(image, results):
 
             box_annotator = BoxAnnotator(
                 color=color,
-                thickness=4   # KETEBALAN BOUNDING BOX
+                thickness=5   # KETEBALAN BOUNDING BOX
             )
 
             detection = Detections(
