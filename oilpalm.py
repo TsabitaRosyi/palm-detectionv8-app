@@ -47,7 +47,7 @@ label_to_color = {
 }
 label_annotator = LabelAnnotator(
     text_scale=1,       # 🔥 perbesar ukuran teks (default kecil)
-    text_thickness=6,     # 🔥 tebalkan huruf
+    text_thickness=4,     # 🔥 tebalkan huruf
     text_padding=6        # 🔥 beri jarak biar tidak mepet box
 )
 
