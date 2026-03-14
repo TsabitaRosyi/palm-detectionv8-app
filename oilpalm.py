@@ -85,7 +85,7 @@ def draw_results(image, results, return_type="pil"):
 # -----------------------------
 with st.sidebar:
     st.markdown("<div style='text-align:center;'>", unsafe_allow_html=True)
-    st.image("logo-saraswanti.png", width=150)
+    st.image("logo.png", width=150)
     st.markdown("</div>", unsafe_allow_html=True)
 
     st.markdown("<h4 style='margin-bottom: 5px;'>Pilih metode input:</h4>", unsafe_allow_html=True)
