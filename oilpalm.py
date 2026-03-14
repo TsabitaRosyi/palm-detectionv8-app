@@ -46,7 +46,7 @@ label_to_color = {
     "mentah": Color.BLACK
 }
 label_annotator = LabelAnnotator(
-    text_scale=1,       # 🔥 perbesar ukuran teks (default kecil)
+    text_scale=5,       # 🔥 perbesar ukuran teks (default kecil)
     text_thickness=4,     # 🔥 tebalkan huruf
     text_padding=6        # 🔥 beri jarak biar tidak mepet box
 )
