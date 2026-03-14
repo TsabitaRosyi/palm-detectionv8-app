@@ -92,7 +92,7 @@ with st.sidebar:
     option = st.radio("", ["Upload Gambar", "Gunakan Kamera (Foto)", "Upload Video", "Kamera Live"], label_visibility="collapsed")
 
     # Created by section
-    profile_img = Image.open("foto1.jpg")
+    profile_img = Image.open("foto.jpg")
     st.markdown(
         f"""
         <style>
