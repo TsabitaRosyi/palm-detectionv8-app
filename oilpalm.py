@@ -254,7 +254,7 @@ if option == "Upload Gambar":
         colA, colB = st.columns([1,1])
 
         with colA:
-            # Kotak Total Deteksi
+            # Total Deteksi
             st.markdown("""
             <div style="
                 border:3px solid black;
@@ -273,12 +273,12 @@ if option == "Upload Gambar":
             )
         
         with colB:
-            # Flex container agar angka Mentah, Mengkal, Matang sejajar vertikal dengan angka 7
+            # Flex container agar Mentah, Mengkal, Matang vertikal sejajar dengan angka 7
             st.markdown(f"""
             <div style="
                 display:flex;
                 flex-direction:column;
-                justify-content:center;
+                justify-content:center;  /* tengah vertikal */
                 height:100%;
                 font-size:22px;
                 font-weight:bold;
