@@ -273,16 +273,15 @@ if option == "Upload Gambar":
             )
         
         with colB:
-            # Flex container agar Mentah, Mengkal, Matang vertikal sejajar dengan angka 7
             st.markdown(f"""
             <div style="
                 display:flex;
-                flex-direction:column;
-                justify-content:center;  /* tengah vertikal */
+                justify-content:space-around;
+                align-items:center;
                 height:100%;
                 font-size:22px;
                 font-weight:bold;
-                line-height:2;">
+            ">
                 <div>Mentah: {mentah}</div>
                 <div>Mengkal: {mengkal}</div>
                 <div>Matang: {matang}</div>
