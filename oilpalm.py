@@ -254,7 +254,7 @@ if option == "Upload Gambar":
         colA, colB = st.columns([1,1])
 
         with colA:
-            # Total Deteksi dengan kotak
+            # Kotak Total Deteksi
             st.markdown("""
             <div style="
                 border:3px solid black;
@@ -266,16 +266,28 @@ if option == "Upload Gambar":
             </div>
             """, unsafe_allow_html=True)
         
+            # Angka total deteksi
             st.markdown(
                 f"<h1 style='text-align:center; font-size:60px; margin-top:10px;'>{total}</h1>",
                 unsafe_allow_html=True,
             )
         
         with colB:
-            # Mentah, Mengkal, Matang vertikal, satu per baris
-            st.markdown(f"<div style='font-size:22px; font-weight:bold;'>Mentah: {mentah}</div>", unsafe_allow_html=True)
-            st.markdown(f"<div style='font-size:22px; font-weight:bold;'>Mengkal: {mengkal}</div>", unsafe_allow_html=True)
-            st.markdown(f"<div style='font-size:22px; font-weight:bold;'>Matang: {matang}</div>", unsafe_allow_html=True)
+            # Flex container agar angka Mentah, Mengkal, Matang sejajar vertikal dengan angka 7
+            st.markdown(f"""
+            <div style="
+                display:flex;
+                flex-direction:column;
+                justify-content:center;
+                height:100%;
+                font-size:22px;
+                font-weight:bold;
+                line-height:2;">
+                <div>Mentah: {mentah}</div>
+                <div>Mengkal: {mengkal}</div>
+                <div>Matang: {matang}</div>
+            </div>
+            """, unsafe_allow_html=True)
 
         # ===================== STATUS PANEN ======================
         st.markdown("<br><h4>🌾 Status Kesiapan Panen</h4>", unsafe_allow_html=True)
