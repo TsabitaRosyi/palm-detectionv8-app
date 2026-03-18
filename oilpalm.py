@@ -276,15 +276,32 @@ if option == "Upload Gambar":
             st.markdown(f"""
             <div style="
                 display:flex;
-                justify-content:space-around;
+                justify-content:center;
                 align-items:center;
-                height:100%;
-                font-size:22px;
                 font-weight:bold;
+                font-size:22px;
             ">
-                <div>Mentah: {mentah}</div>
-                <div>Mengkal: {mengkal}</div>
-                <div>Matang: {matang}</div>
+                <!-- Angka total -->
+                <div style="
+                    font-size:60px;
+                    display:flex;
+                    align-items:center;
+                    margin-right:20px;
+                ">
+                    {total}
+                </div>
+            
+                <!-- Label vertikal -->
+                <div style="
+                    display:flex;
+                    flex-direction:column;
+                    justify-content:center;  /* membuat angka sejajar label tengah */
+                    line-height:2;
+                ">
+                    <div>Mentah: {mentah}</div>
+                    <div>Mengkal: {mengkal}</div>
+                    <div>Matang: {matang}</div>
+                </div>
             </div>
             """, unsafe_allow_html=True)
 
