@@ -254,6 +254,7 @@ if option == "Upload Gambar":
         colA, colB = st.columns([1,2])
 
         with colA:
+            # Total Deteksi dengan kotak sederhana
             st.markdown("""
             <div style="
                 border:3px solid black;
@@ -271,15 +272,15 @@ if option == "Upload Gambar":
             )
         
         with colB:
-            # tampilkan Mentah, Mengkal, Matang sejajar horizontal dengan total
+            # Tampilkan Mentah, Mengkal, Matang tanpa kotak
             st.markdown(f"""
             <div style="
-                display:flex;
-                justify-content:flex-start;
-                align-items:center;
-                gap:40px;
                 font-size:22px;
-                font-weight:bold;">
+                font-weight:bold;
+                display:flex;
+                gap:50px;
+                align-items:center;
+                margin-top:30px;">
                 <div>Mentah: {mentah}</div>
                 <div>Mengkal: {mengkal}</div>
                 <div>Matang: {matang}</div>
