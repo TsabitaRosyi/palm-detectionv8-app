@@ -267,7 +267,6 @@ if option == "Upload Gambar":
             st.markdown("""
             <div style="
                 border:3px solid black;
-                border-radius:20px;
                 padding:15px;
                 font-size:22px;
                 font-weight:bold;">
