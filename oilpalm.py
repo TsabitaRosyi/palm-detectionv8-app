@@ -273,46 +273,23 @@ if option == "Upload Gambar":
             )
         
         with colB:
-           # ==================== REKAP DETEKSI ======================
-            total = sum(class_counts.values())
-            
-            mentah = class_counts.get("mentah", 0)
-            mengkal = class_counts.get("mengkal", 0)
-            matang = class_counts.get("matang", 0)
-            
-            # ------------------- Tampilkan Total + Label -------------------
-            st.markdown(f"""
+          
+            with colB:
+            st.markdown("""
             <div style="
-                display:flex;
-                justify-content:center;
-                align-items:center;
-                font-weight:bold;
+                border:3px solid black;
+                border-radius:20px;
+                padding:15px;
                 font-size:22px;
-            ">
-                <!-- Angka total -->
-                <div style="
-                    font-size:60px;
-                    display:flex;
-                    align-items:center;
-                    margin-right:20px;
-                    line-height:1;
-                ">
-                    {total}
-                </div>
-            
-                <!-- Label vertikal -->
-                <div style="
-                    display:flex;
-                    flex-direction:column;
-                    justify-content:center; /* otomatis sejajar label tengah (Mengkal) */
-                    line-height:2;
-                ">
-                    <div>Mentah: {mentah}</div>
-                    <div>Mengkal: {mengkal}</div>
-                    <div>Matang: {matang}</div>
-                </div>
-            </div>
+                font-weight:bold;">
             """, unsafe_allow_html=True)
+
+            st.write(f"Mentah  : {mentah}")
+            st.write(f"Mengkal : {mengkal}")
+            st.write(f"Matang  : {matang}")
+
+            st.markdown("</div>", unsafe_allow_html=True)
+
 
         # ===================== STATUS PANEN ======================
         st.markdown("<br><h4>🌾 Status Kesiapan Panen</h4>", unsafe_allow_html=True)
