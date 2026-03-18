@@ -255,16 +255,7 @@ if option == "Upload Gambar":
 
         with colA:
             # Total Deteksi
-            st.markdown("""
-            <div style="
-                border:3px solid black;
-                border-radius:20px;
-                padding:10px;
-                text-align:center;
-                font-weight:bold;">
-                Jumlah Total Deteksi
-            </div>
-            """, unsafe_allow_html=True)
+            st.markdown("<br><h4> 🔢 Jumlah Total Deteksi </h4>", unsafe_allow_html=True)
         
             # Angka total deteksi
             st.markdown(
