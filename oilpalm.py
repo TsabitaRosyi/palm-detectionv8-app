@@ -271,10 +271,20 @@ if option == "Upload Gambar":
             )
         
         with colB:
-            # tampilkan angka Mentah, Mengkal, Matang secara vertikal, tanpa kotak
-            st.write(f"Mentah  : {mentah}")
-            st.write(f"Mengkal : {mengkal}")
-            st.write(f"Matang  : {matang}")
+            # tampilkan Mentah, Mengkal, Matang sejajar horizontal dengan total
+            st.markdown(f"""
+            <div style="
+                display:flex;
+                justify-content:flex-start;
+                align-items:center;
+                gap:40px;
+                font-size:22px;
+                font-weight:bold;">
+                <div>Mentah: {mentah}</div>
+                <div>Mengkal: {mengkal}</div>
+                <div>Matang: {matang}</div>
+            </div>
+            """, unsafe_allow_html=True)
 
         # ===================== STATUS PANEN ======================
         st.markdown("<br><h4>🌾 Status Kesiapan Panen</h4>", unsafe_allow_html=True)
