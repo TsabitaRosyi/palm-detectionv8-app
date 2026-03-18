@@ -264,27 +264,29 @@ if option == "Upload Gambar":
                 Jumlah Total Deteksi
             </div>
             """, unsafe_allow_html=True)
-
+        
             st.markdown(
                 f"<h1 style='text-align:center; font-size:60px; margin-top:10px;'>{total}</h1>",
                 unsafe_allow_html=True,
             )
-
+        
         with colB:
-            st.markdown("""
+            st.markdown(f"""
             <div style="
                 border:3px solid black;
                 border-radius:20px;
                 padding:15px;
                 font-size:22px;
-                font-weight:bold;">
+                font-weight:bold;
+                display:flex;
+                justify-content:space-around;
+                align-items:center;
+                text-align:center;">
+                <div>Mentah<br>{mentah}</div>
+                <div>Mengkal<br>{mengkal}</div>
+                <div>Matang<br>{matang}</div>
+            </div>
             """, unsafe_allow_html=True)
-
-            st.write(f"Mentah  : {mentah}")
-            st.write(f"Mengkal : {mengkal}")
-            st.write(f"Matang  : {matang}")
-
-            st.markdown("</div>", unsafe_allow_html=True)
 
         # ===================== STATUS PANEN ======================
         st.markdown("<br><h4>🌾 Status Kesiapan Panen</h4>", unsafe_allow_html=True)
