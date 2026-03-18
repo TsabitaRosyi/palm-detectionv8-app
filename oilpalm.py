@@ -264,19 +264,17 @@ if option == "Upload Gambar":
             )
         
         with colB:
-            st.markdown("""
-            <div style="
-                border:3px solid black;
-                padding:15px;
-                font-size:22px;
-                font-weight:bold;">
-            """, unsafe_allow_html=True)
-
-            st.write(f"Mentah  : {mentah}")
-            st.write(f"Mengkal : {mengkal}")
-            st.write(f"Matang  : {matang}")
-
-            st.markdown("</div>", unsafe_allow_html=True)
+        # Judul (dikasih jarak biar sejajar sama colA)
+        st.markdown("<br><h4> 📊 Detail Kematangan </h4>", unsafe_allow_html=True)
+    
+        # Isi data
+        st.markdown(f"""
+        <div style='font-size:22px; margin-top:20px;'>
+            🌱 Mentah&nbsp;&nbsp;&nbsp;: <b>{mentah}</b><br>
+            🟡 Mengkal : <b>{mengkal}</b><br>
+            🌾 Matang&nbsp;&nbsp;&nbsp;: <b>{matang}</b>
+        </div>
+        """, unsafe_allow_html=True)
 
 
         # ===================== STATUS PANEN ======================
