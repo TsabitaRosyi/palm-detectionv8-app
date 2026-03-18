@@ -273,6 +273,14 @@ if option == "Upload Gambar":
             )
         
         with colB:
+           # ==================== REKAP DETEKSI ======================
+            total = sum(class_counts.values())
+            
+            mentah = class_counts.get("mentah", 0)
+            mengkal = class_counts.get("mengkal", 0)
+            matang = class_counts.get("matang", 0)
+            
+            # ------------------- Tampilkan Total + Label -------------------
             st.markdown(f"""
             <div style="
                 display:flex;
@@ -287,6 +295,7 @@ if option == "Upload Gambar":
                     display:flex;
                     align-items:center;
                     margin-right:20px;
+                    line-height:1;
                 ">
                     {total}
                 </div>
@@ -295,7 +304,7 @@ if option == "Upload Gambar":
                 <div style="
                     display:flex;
                     flex-direction:column;
-                    justify-content:center;  /* membuat angka sejajar label tengah */
+                    justify-content:center; /* otomatis sejajar label tengah (Mengkal) */
                     line-height:2;
                 ">
                     <div>Mentah: {mentah}</div>
