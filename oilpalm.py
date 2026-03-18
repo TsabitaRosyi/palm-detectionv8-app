@@ -273,8 +273,6 @@ if option == "Upload Gambar":
             )
         
         with colB:
-          
-            with colB:
             st.markdown("""
             <div style="
                 border:3px solid black;
