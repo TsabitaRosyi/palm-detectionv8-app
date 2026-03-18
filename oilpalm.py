@@ -254,32 +254,27 @@ if option == "Upload Gambar":
         colA, colB = st.columns([1,1])
 
         with colA:
-            # Total Deteksi
             st.markdown("""
             <div style="
-                border:3px solid black;
-                border-radius:20px;
-                padding:10px;
-                text-align:center;
-                font-weight:bold;">
-                Jumlah Total Deteksi
+                display:flex;
+                flex-direction:column;
+                justify-content:center;  /* pusatkan vertikal */
+                align-items:center;
+                height:150px;">  <!-- tinggi kotak disesuaikan -->
+                <div style='border:3px solid black; border-radius:20px; padding:10px; font-weight:bold; text-align:center;'>
+                    Jumlah Total Deteksi
+                </div>
+                <h1 style='font-size:60px; margin-top:10px;'>{total}</h1>
             </div>
-            """, unsafe_allow_html=True)
-        
-            # Angka total deteksi
-            st.markdown(
-                f"<h1 style='text-align:center; font-size:60px; margin-top:10px;'>{total}</h1>",
-                unsafe_allow_html=True,
-            )
+            """.format(total=total), unsafe_allow_html=True)
         
         with colB:
-            # Flex container agar Mentah, Mengkal, Matang vertikal sejajar dengan angka 7
             st.markdown(f"""
             <div style="
                 display:flex;
                 flex-direction:column;
-                justify-content:center;  /* tengah vertikal */
-                height:100%;
+                justify-content:center;  /* pusatkan vertikal dengan angka 7 */
+                height:150px;  /* sesuaikan dengan kolom kiri */
                 font-size:22px;
                 font-weight:bold;
                 line-height:2;">
