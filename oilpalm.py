@@ -47,8 +47,8 @@ label_to_color = {
 }
 label_annotator = LabelAnnotator(
     text_scale=1,       #  perbesar ukuran teks (default kecil)
-    text_thickness=2,     #  tebalkan huruf
-    text_padding=9       #  beri jarak biar tidak mepet box
+    text_thickness=1,     #  tebalkan huruf
+    text_padding=10       #  beri jarak biar tidak mepet box
 )
 
 
@@ -81,7 +81,7 @@ def draw_results(image, results):
 
             box_annotator = BoxAnnotator(
                 color=color,
-                thickness=2   # KETEBALAN BOUNDING BOX
+                thickness=1   # KETEBALAN BOUNDING BOX
             )
 
             detection = Detections(
