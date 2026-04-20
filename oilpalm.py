@@ -247,8 +247,11 @@ def crop_center_square(img):
 # =============================
 # Load foto profil
 # =============================
-profile_img = Image.open("foto.jpg")
-profile_img = crop_center_square(profile_img)
+if os.path.exists("foto.jpg"):
+    profile_img = Image.open("foto.jpg")
+    profile_img = crop_center_square(profile_img)
+else:
+    profile_img = Image.new("RGB", (100, 100))
 
 
 # =============================
@@ -262,7 +265,7 @@ with st.sidebar:
     if os.path.exists("logo.png"):
         st.image("logo.png", width=150)
     else:
-        st.warning("Logo tidak ditemukan")  # opsional biar tahu kalau missing
+        st.warning("Logo tidak ditemukan")
 
     st.markdown("<h4>Pilih metode input:</h4>", unsafe_allow_html=True)
 
