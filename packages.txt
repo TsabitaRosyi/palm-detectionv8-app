@@ -1,1 +1,2 @@
+# Tools untuk mendukung OpenGL (rendering grafis), biasanya dibutuhkan oleh OpenCV/Streamlit saat deployment di server (Linux/Cloud)
 mesa-utils
