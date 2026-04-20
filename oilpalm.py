@@ -8,6 +8,7 @@ from supervision import BoxAnnotator, LabelAnnotator, Color, Detections
 from io import BytesIO
 import base64
 import tempfile
+import os
 import plotly.express as px  # ==== TAMBAHAN BARU UNTUK DIAGRAM ====
 
 
