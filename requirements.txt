@@ -1,10 +1,29 @@
+# Framework utama untuk membuat aplikasi web interaktif berbasis Python
 streamlit
+
+# Library utama untuk menjalankan model YOLO (deteksi objek)
 ultralytics
+
+# Library untuk membantu visualisasi dan manajemen hasil deteksi (bounding box, dll)
 supervision==0.18.0
+
+# OpenCV versi headless (tanpa GUI), digunakan untuk pemrosesan gambar/video di server
 opencv-python-headless
+
+# Library komputasi numerik (array, matrix, dll)
 numpy
+
+# Library untuk membaca dan memproses gambar
 Pillow
+
+# Framework deep learning utama (backend model YOLO)
 torch
+
+# Library tambahan PyTorch untuk computer vision (dataset, transform, dll)
 torchvision
+
+# Untuk streaming video real-time di Streamlit (misalnya webcam)
 streamlit-webrtc
+
+# Library untuk visualisasi data interaktif (grafik, chart)
 plotly
