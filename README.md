@@ -43,7 +43,7 @@ Project untuk mendeteksi tingkat kematangan buah kelapa sawit menggunakan YOLOv8
 
 ## 🖼️ Detection Results
 <p align="center">
-  <img src="hasil.jpg" width="700">
+  <img src="hasil.jpg" width="500">
 </p>
 
 ---
